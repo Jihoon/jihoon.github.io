@@ -25,7 +25,7 @@ author_profile: true
 * [Rao, N.D., Min, J., DeFries, R., Ghosh-Jerath, S., Valin, H., & Fanzo, J. (2018). “Healthy, affordable and climate-friendly diets in India.” <i>Global Environmental Change</i>. 49, 154–165.]({{ base_path }}/publication/2018-01-03-healthy-affordable-and-climate-friendly-diets-in-india)
 * [Rao, N.D., & Min, J. (2018). “Decent living standards: material prerequisites for human wellbeing.” <i>Social Indicators Research</i>. 138(1), 225–244.]({{ base_path }}/publication/2018-01-01-decent-living-standards-material-prerequisites-for-human-wellbeing)
 
-## Energy, Climate, and Poverty Inequality
+## Inequality in Energy, Climate, and Livelihood
 
 * [Zimm, C., Boza-Kiss, B., Pachauri, S., Ürge-Vorsatz, D., Chatterjee, S., Mastrucci, A., Min, J., Nick, S., Thema, J., Wiese, F., et al. (2026). “Demand-side measures improve long-term resilience to supply shocks beyond emergencies.” <i>Environmental Research: Energy</i>. Forthcoming.]({{ base_path }}/publication/2026-01-02-demand-side-measures-improve-long-term-resilience-to-supply-shocks-beyond-emerge)
 * [Zhao, S., Fujimori, S., Min, J., Kikstra, J.S., Hasegawa, T., Oshiro, K., & Vishwanathan, S.S. (2025). “The multi-faceted global poverty and income inequality landscape in a decarbonizing world.” <i>Cell Reports Sustainability</i>. 2(10).]({{ base_path }}/publication/2025-01-07-the-multi-faceted-global-poverty-and-income-inequality-landscape-in-a-decarboniz)
