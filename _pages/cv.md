@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Full CV]({{ base_path }}/files/CV Jihoon Min.pdf)
+[Full CV]({{ base_path }}/files/CV Jihoon Min - Aug 2026.pdf)
 
 ## Professional experience
 
