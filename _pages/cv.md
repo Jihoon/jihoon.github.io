@@ -13,7 +13,7 @@ redirect_from:
 
 ## Professional experience
 
-* 2015 - present: Research Scholar
+* 2015 - present: Senior Research Scholar
   * International Institute for Applied Systems Analysis (IIASA)
   * Research program: Energy, Climate, and Environment (ECE)
   * Research group: Transformative Institutional and Social Solutions (TISS)
