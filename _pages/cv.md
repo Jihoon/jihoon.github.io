@@ -47,6 +47,7 @@ redirect_from:
   * Liaison for Diversity Committee, Staff Association Committee, IIASA, 2017
 * External
   * Editorial Board Member, Journal of Climate Change Research, 2021 -
+  * Editorial Board Member, Academic Editor, PLOS Climate, 2025 -
   * Head of the Energy and Environment Section, Korean Scientists and Engineers Association in Austria (KOSEAA), Austria, 2017 -
 * Review activities
   * Nature Sustainability, Global Environmental Change, Environmental Research Letters, Climatic Change, Energy Economics, Journal of Industrial Ecology, Sustainability, Energies, Journal of Environmental Management, Journal of Economic Structures, and GAIA - Ecological Perspectives for Science and Society
