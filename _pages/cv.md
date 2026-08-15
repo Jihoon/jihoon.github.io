@@ -15,6 +15,9 @@ redirect_from:
 
 * 2026 - present: Senior Research Scholar
 * 2015 - 2025: Research Scholar
+  * International Institute for Applied Systems Analysis (IIASA)
+  * Research program: Energy, Climate, and Environment (ECE)
+  * Research group: Transformative Institutional and Social Solutions (TISS)
 * 2014 - 2015: Postdoctoral Fellow
   * Department of Engineering and Public Policy, Carnegie Mellon University
   * Supervisor: Professor Ines Azevedo
