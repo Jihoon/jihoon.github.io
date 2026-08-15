@@ -17,7 +17,7 @@ He has been an invited speaker and participant at workshops spanning energy dema
 
 ## Main research area
 * Decent Living Standards and human wellbeing
-* Energy, climate, and poverty inequality
+* Poverty and inequality in energy and climate
 * Energy and development
 * Consumer choice and behavior
 
