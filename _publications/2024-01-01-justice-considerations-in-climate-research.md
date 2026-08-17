@@ -24,3 +24,7 @@ venue: 'Nature Climate Change'
 paperurl: "https://doi.org/10.1038/s41558-023-01869-0"
 citation: 'Zimm, C., Mintz-Woo, K., Brutschin, E., Hanger-Kopp, S., Hoffmann, R., Kikstra, J.S., Kuhn, M., Min, J., Muttarak, R., Pachauri, S., et al. (2024). “Justice considerations in climate research.” <i>Nature Climate Change</i>. 14(1), 22–30.'
 ---
+
+## Abstract
+
+Climate change and decarbonization raise complex justice questions that researchers and policymakers must address. The distributions of greenhouse gas emissions rights and mitigation efforts have dominated justice discourses within scenario research, an integrative element of the IPCC. However, the space of justice considerations is much larger. At present, there is no consistent approach to comprehensively incorporate and examine justice considerations. Here we propose a conceptual framework grounded in philosophical theory for this purpose. We apply this framework to climate mitigation scenarios literature as proof of concept, enabling a more holistic and multidimensional investigation of justice. We identify areas of future research, including new metrics of service provisioning essential for human well-being.

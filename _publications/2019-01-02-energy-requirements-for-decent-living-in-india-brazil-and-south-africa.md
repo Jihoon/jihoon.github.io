@@ -16,3 +16,7 @@ venue: 'Nature Energy'
 paperurl: "https://doi.org/10.1038/s41560-019-0497-9"
 citation: 'Rao, N.D., Min, J., & Mastrucci, A. (2019). “Energy requirements for decent living in India, Brazil and South Africa.” <i>Nature Energy</i>. 4(12), 1025–1032.'
 ---
+
+## Abstract
+
+For over 30 years, researchers have tried to estimate how much energy societies require to provide for everyone's basic needs. This question gains importance with climate change, because global scenarios of climate stabilization assume strong reductions in energy demand growth in developing countries. Here, we estimate bottom-up the energy embodied in the material underpinnings of decent living standards for India, Brazil and South Africa. We find that our estimates fall within these countries' energy demand projections in global scenarios of climate stabilization at 2 °C, but to different extents. Further, national policies that encourage public transportation and sustainable housing construction will be critical to reduce these energy needs. The results of this study offer a benchmark to compare countries' mitigation efforts and technology transfer arrangements to assess the extent to which they address development priorities in an equitable manner.
