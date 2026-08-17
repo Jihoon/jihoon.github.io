@@ -1,5 +1,9 @@
 source "https://rubygems.org"
 
+# Ruby 3.4+ removed csv from the default gems, but Jekyll 3.9 (pinned by
+# github-pages below) still expects it to be available implicitly.
+gem "csv"
+
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
