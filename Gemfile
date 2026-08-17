@@ -5,6 +5,11 @@ source "https://rubygems.org"
 gem "csv"
 gem "bigdecimal"
 
+# liquid 4.0.3 (a valid resolution for jekyll 3.9's dependency range) calls
+# String#tainted?, which Ruby removed entirely in 3.2+. 4.0.4 dropped that
+# call, so pin at least that version to avoid a NoMethodError on newer Ruby.
+gem "liquid", ">= 4.0.4"
+
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
