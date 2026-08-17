@@ -17,6 +17,11 @@ gem "jekyll", "~> 4.3"
 gem "kramdown-parser-gfm"
 gem "rouge"
 
+# Jekyll's own version constraint allows liquid as old as 4.0.0, which
+# still calls the since-removed String#tainted? and crashes on modern
+# Ruby. Force at least the patch release that dropped that call.
+gem "liquid", ">= 4.0.4"
+
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-sitemap"
