@@ -25,7 +25,10 @@ group :jekyll_plugins do
   gem "jekyll-gist"
 end
 
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
+# Note: wdm (native Windows file-watching for faster --livereload) is
+# intentionally omitted -- it needs a full MSYS2/DevKit toolchain to
+# compile and fails without one. Use `jekyll serve --force_polling`
+# instead, which works everywhere without it.
 
 # Resolve an error on windows
 # => jekyll 3.9.0 | Error:  No source of timezone data could be found.
