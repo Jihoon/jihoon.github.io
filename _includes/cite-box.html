@@ -1,0 +1,52 @@
+{% comment %}
+  Renders a "View at publisher" link plus a collapsible citation-export box
+  (BibTeX + RIS) for a page in the publications collection. Expects page
+  front matter fields: bibtex_key, authors (list), title, venue, date,
+  volume, number, pages, doi, paperurl.
+{% endcomment %}
+
+{% if page.paperurl %}
+  <p><a href="{{ page.paperurl }}" class="btn">View at publisher</a></p>
+{% endif %}
+
+{% if page.bibtex_key %}
+  {% assign lb = "{" %}
+  {% assign rb = "}" %}
+  {% assign bib_authors = page.authors | join: " and " %}
+  {% assign bib_year = page.date | date: "%Y" %}
+
+  {% capture bibtex %}@article{{ lb }}{{ page.bibtex_key }},
+  author = {{ lb }}{{ bib_authors }}{{ rb }},
+  title = {{ lb }}{{ page.title }}{{ rb }},
+  journal = {{ lb }}{{ page.venue }}{{ rb }},
+  year = {{ lb }}{{ bib_year }}{{ rb }}{% if page.volume %},
+  volume = {{ lb }}{{ page.volume }}{{ rb }}{% endif %}{% if page.number %},
+  number = {{ lb }}{{ page.number }}{{ rb }}{% endif %}{% if page.pages %},
+  pages = {{ lb }}{{ page.pages }}{{ rb }}{% endif %}{% if page.doi %},
+  doi = {{ lb }}{{ page.doi }}{{ rb }}{% endif %}
+{{ rb }}{% endcapture %}
+  {% assign bibtex = bibtex | strip %}
+
+  {% capture ris %}TY  - JOUR
+{% for a in page.authors %}AU  - {{ a }}
+{% endfor %}TI  - {{ page.title }}
+JO  - {{ page.venue }}
+PY  - {{ bib_year }}{% if page.volume %}
+VL  - {{ page.volume }}{% endif %}{% if page.number %}
+IS  - {{ page.number }}{% endif %}{% if page.pages %}
+SP  - {{ page.pages }}{% endif %}{% if page.doi %}
+DO  - {{ page.doi }}{% endif %}
+ER  -
+{% endcapture %}
+  {% assign ris = ris | strip %}
+
+  <details class="cite-box">
+    <summary>Cite this paper</summary>
+    <pre class="cite-box__pre">{{ bibtex | escape }}</pre>
+    <p class="cite-box__downloads">
+      <a href="data:text/plain;charset=utf-8,{{ bibtex | uri_escape | escape }}" download="{{ page.bibtex_key }}.bib">Download BibTeX</a>
+      &nbsp;&middot;&nbsp;
+      <a href="data:application/x-research-info-systems;charset=utf-8,{{ ris | uri_escape | escape }}" download="{{ page.bibtex_key }}.ris">Download RIS</a>
+    </p>
+  </details>
+{% endif %}

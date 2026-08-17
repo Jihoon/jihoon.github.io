@@ -399,3 +399,42 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+
+/*
+   Citation export box
+   ========================================================================== */
+
+.cite-box {
+  margin: 0.75em 0 1em;
+  padding: 0.75em 1em;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background-color: $code-background-color;
+  font-size: $type-size-6;
+
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  &__pre {
+    margin: 0.75em 0 0.5em;
+    padding: 0.75em;
+    overflow-x: auto;
+    background-color: $background-color;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  &__downloads {
+    margin: 0;
+
+    a {
+      color: $link-color;
+    }
+  }
+}
