@@ -1,41 +1,32 @@
 source "https://rubygems.org"
 
-# Ruby 3.4+ removed these from the default gems, but Jekyll 3.9 (pinned by
-# github-pages below) still expects them to be available implicitly.
+# Ruby 3.4+ removed these from the default gems.
 gem "csv"
 gem "bigdecimal"
 
-# liquid 4.0.3 (a valid resolution for jekyll 3.9's dependency range) calls
-# String#tainted?, which Ruby removed entirely in 3.2+. 4.0.4 dropped that
-# call, so pin at least that version to avoid a NoMethodError on newer Ruby.
-gem "liquid", ">= 4.0.4"
+# --- Local preview only ---
+# This site normally targets the "github-pages" meta-gem so local builds
+# match GitHub Pages' production environment exactly. That gem hard-pins
+# very old liquid/kramdown/commonmarker versions, none of which work on
+# modern Ruby (e.g. Ruby 4.0 -- either an unsolvable dependency conflict,
+# or a runtime crash from calling String#tainted?, which Ruby removed in
+# 3.2+). GitHub Pages builds the live site on its own servers and never
+# reads this Gemfile, so swapping to plain modern Jekyll here for local
+# `jekyll serve` has zero effect on the deployed site.
+gem "jekyll", "~> 4.3"
+gem "kramdown-parser-gfm"
+gem "rouge"
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-
-gem "github-pages", group: :jekyll_plugins
-
-# If you want to use Jekyll native, uncomment the line below.
-# To upgrade, run `bundle update`.
-
-# gem "jekyll"
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-paginate"
+  gem "jekyll-redirect-from"
+  gem "jekyll-gist"
+end
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # Resolve an error on windows
 # => jekyll 3.9.0 | Error:  No source of timezone data could be found.
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-
-# If you have any plugins, put them here!
-group :jekyll_plugins do
-  # gem "jekyll-archives"
-  gem "jekyll-feed"
-  gem 'jekyll-sitemap'
-  gem 'hawkins'
-end
